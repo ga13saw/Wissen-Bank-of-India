@@ -1,0 +1,44 @@
+.service-img{
+    width: 1360px;
+    height: 400px;
+}
+
+/* .service-img-container{
+
+} */
+
+.service-intro{
+    margin: 5px 10px;
+    text-align-last: left;
+    /* font-style: italic; */
+    font-style: italic;
+}
+
+.servicecal{
+    margin: 2% 5%;
+}
+
+h2{
+    color: blue;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child-left {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    /* border: 2px solid red; */
+}  
+/* .float-child-right {
+    width: 40%;
+    float: right;
+    padding: 20px;
+    border: 2px solid red;
+}  */
+.calbtn{
+    margin: 10% 70%;
+}

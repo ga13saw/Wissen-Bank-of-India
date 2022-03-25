@@ -1,38 +1,55 @@
 <html>
 
 <head>
-    <title>Net Banking</title>
-  </head>
+  <title>Net Banking</title>
+  <link rel="stylesheet" href="css/header.css">
+  <style>
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+  </style>
+</head>
+
 <body>
-<nav align="right" style="
-    margin-right: 5%;
-    margin-top: 2%;">
-<a href="index.html">Home</a> |
-<a href="services.html">Services</a> |
-<a href="about.html">About Us</a> |
-<a href="contact.html">Contact Us</a>
-</nav>
-<h1 align="center">NetBanking WBI</h1>
-    
-     <div align="center">    
-    <form action="index.html">    
-        <label><b>User Name: </b> </label>    
-        <input type="text" name="Uname" placeholder="Username">    
-        <br><br>    
-        <label><b>Password:</b></label>    
-        <input type="Password" name="Pass" placeholder="Password">    
-        <br><br>    
-        <input type="submit" name="log" value="LogIn">       
-           
-          
-    </form>     
-</div>    
-    <div align="center">
-        <form action="register.html">
-<input type="submit" value="Register"/>  
-        </form>
+
+  <!-- header section -->
+  <div class="topnav">
+    <img class="logo-img" src="images/Wissen-Logo.jpg" width="200" height="50" ALT="align box" ALIGN=CENTER>
+    <div class="topnav-right">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="netbanking.html">Netbanking</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
     </div>
-   
+  </div>
+
+  
+
+  <div align="center">
+    <form action="index.html">
+      <fieldset>
+        <legend align="center"><h1 >NetBanking WBI</h1></legend>
+        <label><b>User Name: </b> </label>
+        <input type="text" name="Uname" placeholder="Username" autofocus required>
+        <br><br>
+        <label><b>Password:</b></label>
+        <input type="Password" name="Pass" placeholder="Password" min="6" max="10" required>
+        <br><br>
+        <input type="submit" name="log" value="LogIn">
+        
+        <button type="button" class="btn"><a href="register.html" class="button">Register</a></button>
+      </fieldset>
+    </form>
+  </div>
+ 
+
 
 </body>
+
 </html>

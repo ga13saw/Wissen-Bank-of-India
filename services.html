@@ -1,24 +1,138 @@
 <html>
-  <head>
-    <title>WBI Services</title>
-  </head>
+
+<head>
+  <title>WBI Services</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/services.css">
+  <script src="js/service.js"></script>
+
+
+</head>
+
 <body>
-<!--<nav align="right" style="
-    margin-left: 5%;
-    margin-top: 2%;">
-<a href="index.html">Back</a>
-</nav>
--->
-  <nav align="right" style="
-    margin-right: 5%;
-    margin-top: 2%;">
-<a href="index.html">Home</a> |
-<a href="netbanking.html">Netbanking</a> |
-<a href="about.html">About Us</a> |
-<a href="contact.html">Contact Us</a>
-</nav>
-<h1 align="center">Welcome to WBI services</h1>
+
+  <!-- header section -->
+  <div class="topnav">
+    <img class="logo-img" src="images/Wissen-Logo.jpg" width="200" height="50" ALT="align box" ALIGN=CENTER>
+    <div class="topnav-right">
+      <a href="index.html">Home</a>
+      <a class="active" href="services.html">Services</a>
+      <a href="netbanking.html">Netbanking</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- services images -->
+  <div class="service-img-container">
+    <img class="service-img" src="/images/services.JPG" alt="services bannder">
+
+  </div>
+
+  <!-- services introduction -->
+  <div class="service-intro">
+    <p>
+      Bank’s job is to provide customers with financial services that help people better manage their lives. As
+      technology advances and competition increases, banks are offering different types of services to stay current and
+      attract customers.
+
+      Whether you are opening your first bank account or have managed a checking account for years, it helps to know the
+      different types of banking services available. This ensures you get the most out of your current financial
+      institution. Deciding which services are most important can lead you to the bank that best fits your needs.
+    </p>
+
+
+  </div>
+  <hr>
+  <div class="float-container">
+    <div class="float-child-left">
+      
+        <h2 class="servicecal">EMI Calculator</h2>
+        
+        <form class="servicecal" >
+          <table>
+            <tr>
+              <td><label>Applicant: </label></td>
+              <td><input type="text" name="applicant" id="applicant"></td>
+            </tr>
+            <tr>
+              <td><label>Loan Amount </label></td>
+              <td><input type="number" name="amount" id="amount"></td>
+            </tr>
+            <tr>
+              <td><label>Type: </label></td>
+              <!-- <td><input type="text" name="ltype" id="ltype"></td> -->
+              <td>
+                <select name="ltype" id="ltype" onchange="decideRoi(this)">
+                  <option value="" selected="selected">select loan type</option>
+                  <option value="7">Home</option>
+                  <option value="9">Car</option>
+                  <option value="12">Personal</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Annual Interest Rate (%) </label></td>
+              <td><input type="number" name="roi" id="roi" disabled></td>
+            </tr>
+            <tr>
+              <td><label>Tenure (in Months) </label></td>
+              <td><input type="text" name="duration" id="duration"></td>
+            </tr>
+            <tr>
+              <td><label>EMI (Rs.) </label></td>
+              <td><input type="text" name="emi" id="emi" disabled></td>
+            </tr>
+            <tr>
+              <td rowspan="2"><button  class="calbtn"  type="button" onclick="calculateEMI()">Calculate</button></td>
+
+            </tr>
+
+
+
+
+          </table>
+        </form>
+     
+    </div>
+    <div class="float-child-left">
+      <h2 class="servicecal">Maturity Calculator</h2>
+        <form class="servicecal">
+          <table>
+            
+            <tr>
+              <td><label>Principle Amount</label></td>
+              <td><input type="number" name="pamount" id="pamount"></td>
+            </tr>
+            
+            <tr>
+              <td> <label>Annual Interest Rate (%) </label></td>
+              <td><input type="number" name="proi" id="proi" disabled></td>
+            </tr>
+            <tr>
+              <td><label>Tenure (in Years) </label></td>
+              <td><input type="text" name="pduration" id="pduration" onchange="setROI()"></td>
+            </tr>
+            <tr>
+              <td><label>Maturity (Rs.) </label></td>
+              <td><input type="text" name="maturamt" id="maturamt" disabled></td>
+            </tr>
+            <tr>
+              <td rowspan="2"><button class="calbtn" type="button" onclick="calculateMaturity()">Calculate</button></td>
+
+            </tr>
+
+
+
+
+          </table>
+        </form>
+
+    </div>
+
+  </div>
 
 
 </body>
+
 </html>

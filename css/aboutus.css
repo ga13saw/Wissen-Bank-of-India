@@ -1,0 +1,11 @@
+.aboutus{
+    width: 1360px;
+    height: 400px;
+}
+
+.about-intro{
+    margin: 5px 10px;
+    text-align-last: left;
+    /* font-style: italic; */
+    font-style: italic;
+}

@@ -1,0 +1,19 @@
+.top-heading{
+    text-align: center;
+    color: blue;
+}
+.intro{
+    margin: 5px 10px;
+    text-align-last: left;
+    /* font-style: italic; */
+    font-style: italic;
+}
+.image-container{
+    text-align:center;
+    
+
+}
+.joinus{
+    height: 400px;
+    width: 900px;
+}
