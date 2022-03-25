@@ -21,6 +21,9 @@ function validateLoanTime() {
         alert("Tenure should be less than 60 months");
         return false;
     }
+    
+    calculateEMI()
+    
     return true;
 }
 
